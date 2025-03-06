@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="207dp"
+        android:clickable="true"
+        android:ems="10"
+        android:gravity="left"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:hint="用户名"
+        android:padding="15dp"
+        android:textSize="12sp"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/shape1"
+        android:text="登 录"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:ems="20"
+        android:gravity="left"
+        android:padding="15dp"
+        android:hint="密  码"
+        android:textSize="12sp"
+        android:inputType="textPassword" />
+
+   <!-- <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp" />-->
+
+    <TextView
+        android:id="@+id/show_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0000"
+        android:layout_marginTop="29dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/username"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+         android:paddingLeft="12dp"
+        android:textColor="#000000"
+        android:text="用户:" />
+
+   <!-- <TextView
+        android:id="@+id/textView1"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="12dp"
+        android:text="库房："
+        android:textSize="15sp" />-->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignLeft="@+id/textView2"
+        android:paddingLeft="12dp"
+        android:text="密码：" />
+
+</RelativeLayout>

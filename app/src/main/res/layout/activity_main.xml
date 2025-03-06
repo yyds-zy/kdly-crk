@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#84c1ff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="出入库信息" />
+
+	</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/spinner1text"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:text="库房 "
+        android:textSize="30px"
+        android:gravity="center"
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/in_one"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:background="@drawable/color"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:text="原材料入库"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/in_chengpin"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/in_one"
+        android:background="@drawable/color"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:text="成品入库"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+
+
+    <Button
+        android:id="@+id/out_yuanliao"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/in_chengpin"
+        android:layout_below="@+id/in_chengpin"
+        android:background="@drawable/color"
+        android:focusable="true"
+        android:layout_marginTop="15dp"
+        android:text="原材料出库"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/out_one"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/out_yuanliao"
+        android:layout_below="@+id/out_yuanliao"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/color"
+        android:focusable="true"
+        android:text="成品出库"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/in_tukuyxgin"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/out_one"
+        android:background="@drawable/color"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:text="退库入库-异型管中转库"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+
+    
+
+</RelativeLayout>

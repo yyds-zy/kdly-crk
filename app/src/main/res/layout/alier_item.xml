@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+
+    <TextView
+        android:id="@+id/hw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/blak"
+        />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ck_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/blak"
+        />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/unit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/blak"
+        android:text="单位：kg"/>
+
+
+</LinearLayout>

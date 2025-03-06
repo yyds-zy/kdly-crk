@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+   <RelativeLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#84c1ff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/fanhui1"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/goback" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="成品入库"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_alignParentTop="true"
+
+		android:layout_marginTop="45dp"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/spinner2text"
+			android:layout_width="70dp"
+			android:layout_height="50dp"
+
+			android:layout_marginTop="3dp"
+			android:paddingLeft="20dp"
+			android:text="备注"
+			android:textSize="18sp"
+			android:gravity="center"
+			/>
+		<Spinner
+			android:id="@+id/spinner2"
+			android:layout_width="240dp"
+			android:layout_height="40dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="3dp"
+			android:paddingLeft="20dp" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_alignParentTop="true"
+
+		android:layout_marginTop="90dp"
+		android:orientation="vertical" >
+	   <TextView
+		   android:id="@+id/tv_kuwei1"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_alignParentLeft="true"
+		   android:layout_marginLeft="18dp"
+		   android:layout_marginTop="10dp"
+		   android:textSize="18sp"
+		   android:textColor="#226bb6"
+		   android:text="库位号:" />
+
+	   <TextView
+		   android:id="@+id/et_kuwei2_in"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_alignBaseline="@+id/tv_kuwei1"
+		   android:layout_alignBottom="@+id/tv_kuwei1"
+		   android:layout_marginLeft="16dp"
+		   android:layout_toRightOf="@+id/tv_kuwei1"
+		   android:singleLine="true"
+		   android:ems="10" />
+
+   	 </RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_alignParentTop="true"
+
+		android:layout_marginTop="135dp"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/tv_qtysum1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="18dp"
+			android:layout_marginTop="10dp"
+			android:textSize="18sp"
+			android:textColor="#226bb6"
+			android:text="数量合计:" />
+
+		<TextView
+			android:id="@+id/tv_qtysumin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tv_qtysum1"
+			android:layout_alignBottom="@+id/tv_qtysum1"
+			android:layout_marginLeft="16dp"
+			android:layout_toRightOf="@+id/tv_qtysum1"
+			android:singleLine="true"
+			android:ems="10" />
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/linearLayout4"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_alignParentTop="true"
+
+		android:layout_marginTop="180dp"
+		android:orientation="vertical" >
+
+   	 <Button
+   	     android:id="@+id/btn_clear1"
+   	     android:layout_width="100dp"
+   	     android:layout_height="40dp"
+   	     android:background="#84c1ff"
+
+   	     android:layout_marginLeft="25dp"
+   	     android:text="清空"
+   	     android:textColor="#ffffff" />
+
+   	 <Button
+   	     android:id="@+id/btn_in1"
+   	     android:layout_width="100dp"
+   	     android:layout_height="40dp"
+   	     android:background="#84c1ff"
+   	     android:layout_toRightOf="@+id/btn_clear1"
+
+   	     android:layout_marginLeft="70dp"
+   	     android:text="入库"
+   	     android:textColor="#ffffff" />
+	</RelativeLayout>
+
+
+	<TextView
+		android:id="@+id/tv_qrcode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="225dp"
+		android:text="二维码："
+		android:textColor="#226bb6"
+		android:textSize="14sp" />
+	<TextView
+		android:id="@+id/tv_qrcode_show"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="40dp"
+		android:layout_marginTop="225dp"
+		android:text=""
+		android:textColor="#226bb6"
+		android:textSize="14sp" />
+
+
+
+
+   	 <EditText
+   	     android:id="@+id/et_commodity_code_in"
+   	     android:layout_width="1dp"
+   	     android:layout_height="1dp"
+   	     android:ems="10"
+		 android:singleLine="true"
+		 android:focusable="true"
+		 >
+   	     <requestFocus />
+   	 </EditText>
+
+
+
+
+
+
+
+</RelativeLayout>

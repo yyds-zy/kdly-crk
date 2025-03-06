@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/scan_et"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:singleLine="true"
+        android:focusable="true">
+
+        <requestFocus />
+    </EditText>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:orientation="horizontal"
+       android:layout_marginLeft="15dp"
+       android:gravity="center_vertical">
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="13sp"
+           android:textColor="@color/blue"
+           android:text="物料规格："
+           />
+       <TextView
+           android:id="@+id/guige"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="13sp"
+           android:textColor="@color/blak"
+          android:layout_marginLeft="30dp"
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blue"
+            android:text="名称："
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blak"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blue"
+            android:text="编码："
+            />
+        <TextView
+            android:id="@+id/bm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blak"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blue"
+            android:text="数量："
+            />
+        <TextView
+            android:id="@+id/et_number_show"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/et_bg"
+            android:singleLine="true"
+            android:layout_marginLeft="30dp"
+            android:ems="10"
+
+            android:inputType="number"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blue"
+            android:text="单位："
+            />
+        <TextView
+            android:id="@+id/dw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/blak"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#84c1ff"
+
+
+            android:text="清空"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btn_comfirm"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#84c1ff"
+            android:text="确认"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>
